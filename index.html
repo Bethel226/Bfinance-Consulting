@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bfinance</title>
+    <link rel="stylesheet" href="./Styles/font-awesome-master/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Styles/CSS/style.css">
+</head>
+<body>
+    <section class="baniere" id="baniere">
+        <div class="logo">
+                <span>B</span>finance <br>
+                <h6>Consulting</h6>
+        </div>
+        <div class="baniere-text">
+            <h1>La finance digitale</h1>
+            <p>La meilleure solution pour la digitalisation de vos services.    </p>
+        </div>
+        <div class="baniere_btn">
+            <a href="#"><span></span> Démarrer</a>
+            <a href="#"><span></span> Savoir plus</a>
+        </div>
+    </section>
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Accueil</a>
+                </li>
+                <li>
+                    <a href="#">Notre mission</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Témoignages</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="btn-menu">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times"></i>
+    </div>
+
+    <script>
+
+        document.querySelector('.fa-times').style.display="none"
+
+        const menuBtn = document.querySelector(".btn-menu")
+        const sidebar = document.querySelector(".sidebar")
+
+        menuBtn.onclick = function(){
+            if(sidebar.style.right == "-250px"){
+                sidebar.style.right = "0"
+                document.querySelector('.fa-times').style.display=""
+                document.querySelector('.fa-bars').style.display="none"
+
+            }else{
+                sidebar.style.right = "-250px"
+                document.querySelector('.fa-times').style.display="none"
+                document.querySelector('.fa-bars').style.display=""
+            }
+        }
+
+    </script>
+</body>
+</html>
